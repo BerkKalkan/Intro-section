@@ -1,0 +1,433 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    width: 100vw;
+    height: 780px;
+    background-color: #FFFFFF;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+
+    header {
+        width: 100vw;
+        height: 45px;
+
+        .mobile-header {
+            width: 90vw;
+            height: 35px;
+            margin-left: 16px;
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+
+            h1 {
+                width: 87px;
+                height: 35px;
+                font-family: "Epilogue";
+                font-size: 35px;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: -0.4861111044883728px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            img {
+                width: 32px;
+                height: 18px;
+            }
+        }
+
+        .desktop-header {
+            display: none;
+        }
+    }
+
+    .main-content {
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 48px;
+
+        .mobile-img {
+            width: 375px;
+            height: 281.25px;
+        }
+
+        .desktop-image {
+            display: none;
+        }
+
+        .content-tittle {
+            width: 343px;
+            height: 208px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            h2 {
+                width: 343px;
+                height: 42px;
+                font-family: "Epilogue";
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 42px;
+                letter-spacing: -0.5px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            p {
+                width: 343px;
+                height: 78px;
+                font-family: "Epilogue";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #686868;
+
+            }
+
+            button {
+                width: 136px;
+                height: 48px;
+                font-family: "Epilogue";
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: -0.2222222238779068px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                background-color: black;
+                color: white;
+                border-radius: 15px;
+            }
+        }
+    }
+
+    footer {
+        width: 100vw;
+        margin-top: 50px;
+
+        .footer {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 343px;
+                height: 26px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        header {
+            margin-top: 32px;
+            margin-left: 41px;
+
+            .mobile-header {
+                display: none;
+            }
+
+            .desktop-header {
+                display: flex;
+                width: 100vw;
+                align-items: center;
+
+                h1 {
+                    width: 87px;
+                    height: 35px;
+                    font-family: "Epilogue";
+                    font-size: 35px;
+                    font-weight: 700;
+                    line-height: 35px;
+                    letter-spacing: -0.4861111044883728px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                }
+
+                .header-nav {
+                    width: 62px;
+                    height: 16px;
+                    display: flex;
+                    gap: 40px;
+                    margin-left: 79px;
+
+                    p {
+                        width: 62px;
+                        height: 16px;
+                        font-family: "Epilogue";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        color: #686868;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .acc-btns {
+                    display: flex;
+                    position: fixed;
+                    right: 40px;
+
+                    .btn-login {
+                        width: 104px;
+                        height: 42px;
+                        background-color: white;
+                        border: none;
+                        color: #686868;
+                        font-family: "Epilogue";
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16px;
+                        text-align: left;
+                        text-underline-position: from-font;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .btn-register {
+                        width: 104px;
+                        height: 42px;
+                        border-radius: 14px;
+                        background-color: white;
+                        color: gray;
+                        border: 1.5px solid #686868;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-content {
+            .mobile-img {
+                display: none;
+            }
+
+            .desktop-image {
+                display: flex;
+                width: 480px;
+                height: 640px;
+                position: absolute;
+                top: 130px;
+                left: 830px;
+            }
+
+            .content-tittle {
+                width: 540px;
+                height: 400px;
+                top: 234px;
+                left: 165px;
+
+                h2 {
+                    width: 540px;
+                    height: 161px;
+                    position: absolute;
+                    top: 234px;
+                    left: 165px;
+                    font-size: 82px;
+                    font-weight: 700;
+                    line-height: 80px;
+                    letter-spacing: -1.1111111640930176px;
+                    text-align: left;
+                }
+
+                p {
+                    width: 445px;
+                    height: 84px;
+                    position: absolute;
+                    top: 443px;
+                    left: 165px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                    text-align: left;
+                }
+
+                button {
+                    width: 163px;
+                    height: 56px;
+                    position: absolute;
+                    top: 578px;
+                    left: 165px;
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                        
+                    }
+                }
+            }
+
+        }
+
+        footer {
+            .footer {
+                img {
+                    width: 477.63px;
+                    height: 35.9px;
+                    position: absolute;
+                    top: 742px;
+                    left: 165.38px;
+
+
+
+                }
+            }
+        }
+    }
+}
